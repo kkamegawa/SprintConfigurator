@@ -14,19 +14,19 @@ Currently Project admin's API is not public. This tool only sync from Project It
 ## How to use
 1. Get your PAT grant to "Project and team(read, write and manage)", "Work items(full)"  
    [Authenticate access with personal access tokens for VSTS and TFS](https://docs.microsoft.com/en-us/vsts/accounts/use-personal-access-tokens-to-authenticate?view=vsts)
-   ![PAT for requirement](documents\images\image000.png)
+   ![PAT for requirement](documents/images/image000.png)
 1. Configure your Project Iteration
    https://{youraccount}.visualstudio.com/{yourproject}/_admin/_work
-   ![Project Iteration](documents\images\image001.png)
+   ![Project Iteration](documents/images/image001.png)
 1. check your team Iteration setting, and recode to hope to start sprint index.
-   ![Team Iteration before execute](documents\images\image002.png)
+   ![Team Iteration before execute](documents/images/image002.png)
    https://{your account}.visualstudio.com/{your project}/{your team}/_admin/_work?_a=iterations
    In this case, "Sprint 7" is not apply in team's sprint.
 1. execute this tool  
    `SprintGenerator -PAT {PAT} -url https://{account}.visualstudio.com/ -Project {Project Name} -t {Team Name} -i {sprint index} -f {Sprint Prefix Name}`
 1. after that, sync from "Project Iteration" to "Team Iteration"  
    add "Sprint 7", "Sprint 8", "Sprint 9" in Team Iteration.
-   ![Team Iteration after execute](documents\images\image003.png)
+   ![Team Iteration after execute](documents/images/image003.png)
 
 ## Command Line Option
 
