@@ -1,5 +1,5 @@
-# SprintGenerator
-Sprint Generator for VSTS/TFS. This tool's goal is automatically configure Sprint Calendar. 
+# SprintCongigurator
+Sprint Configurator for VSTS/TFS. This tool's goal is automatically configure Sprint Calendar. 
 
 ## Notice 
 Currently Project admin's API is not public. This tool only sync from Project Iteration to Team Iteration now.
@@ -23,7 +23,7 @@ Currently Project admin's API is not public. This tool only sync from Project It
    https://{your account}.visualstudio.com/{your project}/{your team}/_admin/_work?_a=iterations
    In this case, "Sprint 7" is not apply in team's sprint.
 1. execute this tool  
-   `SprintGenerator -PAT {PAT} -url https://{account}.visualstudio.com/ -Project {Project Name} -t {Team Name} -i {sprint index} -f {Sprint Prefix Name}`
+   `sprintconfigcli -PAT {PAT} -url https://{account}.visualstudio.com/ -Project {Project Name} -t {Team Name} -i {sprint index} -f {Sprint Prefix Name}`
 1. after that, sync from "Project Iteration" to "Team Iteration"  
    add "Sprint 7", "Sprint 8", "Sprint 9" in Team Iteration.
    ![Team Iteration after execute](documents/images/image003.png)
