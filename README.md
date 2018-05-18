@@ -1,5 +1,7 @@
-# SprintCongigurator
-Sprint Configurator for VSTS/TFS. This tool's goal is automatically configure Sprint Calendar. 
+# SprintConfigurator
+Sprint Configurator for VSTS/TFS. This tool's goal is automatically configure Sprint Calendar.   
+
+![Build Status](https://clueup.visualstudio.com/_apis/public/build/definitions/d5ee4abe-e932-4239-a0a1-d304dbdb41fa/152/badge)
 
 ## Notice 
 Currently Project admin's API is not public. This tool only sync from Project Iteration to Team Iteration now.
